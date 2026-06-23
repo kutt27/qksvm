@@ -1,8 +1,15 @@
-from encoding.angle_encoding import angle_encode
-from states.statevector_utils import get_statevector
+from kernels.quantum_kernel import kernel_matrix
 from feature_maps.zz_feature_map import build_zz_feature_map
 
-x = [0.3, 1.2]
+X = [
+    [0.3, 1.2],
+    [0.4, 1.1],
+    [2.7, 2.8]
+]
 
-circuit = build_zz_feature_map(x)
-print(circuit.draw())
+K = kernel_matrix(
+    build_zz_feature_map,
+    X
+)
+
+print(K)
