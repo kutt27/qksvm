@@ -1,3 +1,5 @@
+**Update**: For some time will take the time to solve a really good industrial use case related to quantum. Until then no more update here.
+
 # Qauntum Kernal Support Vector Machine 
 
 Current update: Entanglement of qubits
